@@ -1,0 +1,56 @@
+// filepath: project/src/components/AddListingForm.tsx
+import React, { useState } from 'react';
+import { Button, Input, Textarea } from '@/components/ui'; // Adjust the import based on your UI library
+
+const AddListingForm = () => {
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
+  const [price, setPrice] = useState('');
+  const [images, setImages] = useState<File[]>([]);
+
+  const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (event.target.files) {
+      setImages(Array.from(event.target.files));
+    }
+  };
+
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    // Handle form submission logic here, such as sending data to an API
+    console.log({ title, description, price, images });
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="space-y-4">
+      <Input
+        type="text"
+        placeholder="Listing Title"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        required
+      />
+      <Textarea
+        placeholder="Description"
+        value={description}
+        onChange={(e) => setDescription(e.target.value)}
+        required
+      />
+      <Input
+        type="number"
+        placeholder="Price"
+        value={price}
+        onChange={(e) => setPrice(e.target.value)}
+        required
+      />
+      <Input
+        type="file"
+        accept="image/*"
+        multiple
+        onChange={handleImageChange}
+      />
+      <Button type="submit">Add Listing</Button>
+    </form>
+  );
+};
+
+export default AddListingForm;

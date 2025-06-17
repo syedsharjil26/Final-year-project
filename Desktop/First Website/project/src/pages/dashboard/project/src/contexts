@@ -1,0 +1,22 @@
+// filepath: project/src/contexts/index.tsx
+import React, { createContext, useContext, useState } from 'react';
+
+const ListingContext = createContext(null);
+
+export const ListingProvider = ({ children }) => {
+  const [listings, setListings] = useState([]);
+
+  const addListing = (newListing) => {
+    setListings((prevListings) => [...prevListings, newListing]);
+  };
+
+  return (
+    <ListingContext.Provider value={{ listings, addListing }}>
+      {children}
+    </ListingContext.Provider>
+  );
+};
+
+export const useListings = () => {
+  return useContext(ListingContext);
+};

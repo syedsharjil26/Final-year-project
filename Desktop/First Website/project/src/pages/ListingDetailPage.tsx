@@ -217,7 +217,7 @@ export default function ListingDetailPage() {
           {/* Key Details */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
             <div className="bg-muted/30 p-4 rounded-lg text-center">
-              <div className="text-2xl font-semibold mb-1">${listing.price}</div>
+              <div className="text-2xl font-semibold mb-1">₹{listing.price}</div>
               <div className="text-sm text-muted-foreground">per month</div>
             </div>
             <div className="bg-muted/30 p-4 rounded-lg text-center">

@@ -226,7 +226,7 @@ export default function PropertyDetailPage() {
 
           {/* Price */}
           <div>
-            <h2 className="text-2xl font-bold">£{property.price}/month</h2>
+            <h2 className="text-2xl font-bold">₹{property.price}/month</h2>
           </div>
 
           {/* Description */}

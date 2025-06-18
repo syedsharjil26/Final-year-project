@@ -120,7 +120,7 @@ export function PropertyCard({ listing, isSaved = false, onSave, className }: Pr
           
           {/* Price tag */}
           <div className="absolute bottom-3 left-3 bg-background/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold">
-            ${listing.price}/mo
+            ₹{listing.price}/mo
           </div>
           
           {/* Save button */}

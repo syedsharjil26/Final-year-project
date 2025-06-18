@@ -114,7 +114,7 @@ export default function StudentSavedListings({ savedListings, onSave }: StudentS
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute bottom-3 left-3 bg-background/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold">
-                    ${listing.price}/mo
+                    ₹{listing.price}/mo
                   </div>
                 </div>
                 <div className="flex-1 p-4 flex flex-col">

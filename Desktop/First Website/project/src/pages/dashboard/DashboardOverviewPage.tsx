@@ -165,7 +165,7 @@ export default function DashboardOverviewPage() {
                       <div className="font-medium">{listing.title}</div>
                       <div className="text-sm text-muted-foreground">{listing.location}</div>
                     </div>
-                    <div className="text-sm font-semibold">${listing.price}/mo</div>
+                    <div className="text-sm font-semibold">₹{listing.price}/mo</div>
                   </div>
                 ))
               )}

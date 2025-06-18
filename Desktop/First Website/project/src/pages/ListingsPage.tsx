@@ -197,7 +197,7 @@ export default function ListingsPage() {
             </div>
             {/* Price Range */}
             <div className="mb-6">
-              <label className="block text-sm font-semibold mb-2">Price Range (£)</label>
+              <label className="block text-sm font-semibold mb-2">Price Range (₹)</label>
               <div className="flex gap-2">
                 <input
                   type="number"
@@ -281,7 +281,7 @@ export default function ListingsPage() {
                 </div>
                 {/* Price Range */}
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Price Range (£)</label>
+                  <label className="block text-sm font-semibold mb-2">Price Range (₹)</label>
                   <div className="flex gap-2">
                     <input
                       type="number"

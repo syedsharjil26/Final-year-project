@@ -217,7 +217,7 @@ export default function HomeownerDashboardPage() {
                             className="w-full h-full object-cover"
                           />
                           <div className="absolute bottom-3 left-3 bg-background/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-semibold">
-                            ${listing.price}/mo
+                            ₹{listing.price}/mo
                           </div>
                         </div>
                         <div className="p-4">
@@ -368,7 +368,7 @@ export default function HomeownerDashboardPage() {
                           <div className="p-6 flex-1">
                             <div className="flex justify-between items-start">
                               <h3 className="font-semibold text-lg mb-2">{listing.title}</h3>
-                              <div className="text-xl font-bold">${listing.price}/mo</div>
+                              <div className="text-xl font-bold">₹{listing.price}/mo</div>
                             </div>
                             <p className="text-sm text-muted-foreground mb-4 line-clamp-2">
                               {listing.description}

@@ -68,7 +68,7 @@ export default function AddListingPage() {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-1">Price ($/mo)</label>
+              <label className="block text-sm font-medium mb-1">Price (₹/mo)</label>
               <input
                 type="number"
                 value={price}

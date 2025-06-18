@@ -19,7 +19,7 @@ const mockNotifications = [
     id: '1',
     type: 'price_drop',
     title: 'Price Drop Alert',
-    message: 'The price for "Modern Studio Near University" has been reduced by $50.',
+    message: 'The price for "Modern Studio Near University" has been reduced by ₹50.',
     timestamp: '2025-02-28T14:30:00Z',
     isRead: false,
     linkTo: '/listings/1',
